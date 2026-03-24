@@ -17,11 +17,12 @@ class ViewController: UIViewController
     
     @IBAction func moveButton(_ sender: Any)
     {
+        //can only do suck syntax optimizations in Swift 5.3+ 
         UIView.animate(withDuration: 10.0) {
             self.boxView.frame = CGRect(x: 200, y: 400, width: 75, height: 300)
             self.boxView.backgroundColor = .black
         }completion: { _ in print("done")}
-                    
+       
     }
     
     override func viewDidLoad()
